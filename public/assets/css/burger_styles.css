@@ -149,4 +149,8 @@ label {
     #newBurger {
         margin: 1rem 0 2rem 0;
     }
+    h3 {
+        line-height: normal;
+        padding: 1rem 0;
+    }
 }
