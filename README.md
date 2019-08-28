@@ -28,4 +28,4 @@ HTML
 ## Role
 Sole developer with functionality requirements provided by UW Coding Bootcamp/Trilogy Education Services.
 
-## link to deployed version
+## https://nameless-taiga-35229.herokuapp.com/
