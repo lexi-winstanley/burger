@@ -1,0 +1,34 @@
+<header>
+    <div class="logoHolder"></div>
+    <h1>Eat Da Burger</h1>
+</header>
+<main>
+    <div id="burgersHolder">
+        <div id="readyToEat">
+            {{#each readyToEatBurgers}}
+            <div>
+                <h3>{{this.burger_name}}</h3>
+                <button class="devourButton" onclick="update({{this.id}})">Devour It!</button>
+            </div>
+            {{/each}}
+        </div>
+        <div id="devoured">
+            {{#each devouredBurgers}}
+            <div>
+                <h3>{{this.burger_name}}</h3>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <form id="newBurger">
+        <input type="text" id="newBurgerName" name="name">
+        <label for="newBurgerName">Enter the name of a burger you'd like to eat and then click "Submit".</label>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</main>
+<footer>
+    <p>Created by Lexi Winstanley</p>
+    <p>August 2019</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/userInterface.js"></script>
