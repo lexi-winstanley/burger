@@ -1,20 +1,22 @@
 <header>
-    <div class="logoHolder"></div>
+    <div class="logoHolder"><img id="logo" src="/assets/images/Logo.svg" alt="Hamburger graphic"></div>
     <h1>Eat Da Burger</h1>
 </header>
 <main>
     <div id="burgersHolder">
         <div id="readyToEat">
+            <h2>Ready to Eat</h2>
             {{#each readyToEatBurgers}}
-            <div>
+            <div class="individualBurger">
                 <h3>{{this.burger_name}}</h3>
                 <button class="devourButton" onclick="update({{this.id}})">Devour It!</button>
             </div>
             {{/each}}
         </div>
         <div id="devoured">
+            <h2>Devoured</h2>
             {{#each devouredBurgers}}
-            <div>
+            <div class="individualBurger">
                 <h3>{{this.burger_name}}</h3>
             </div>
             {{/each}}

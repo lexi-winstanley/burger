@@ -1,3 +1,150 @@
+html {
+    width: 100%;
+    min-height: 100%;
+}
 body {
     width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #45bce5;
+}
+header {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+main {
+    flex: 1;
+}
+footer {
+    flex: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.logoHolder {
+    width: 8%;
+}
+#logo {
+    width: 100%;
+}
+h1 {
+    font-family: 'Oleo Script', serif;
+    color: #d54327;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+h2 {
+    font-family: 'Oleo Script', serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #d54327;
+    line-height: 3rem;
+    flex: 1;
+}
+#burgersHolder {
+    display: flex;
+    justify-content: center;
+}
+#readyToEat {
+    text-align: center;
+    margin: 0 3rem 0 1rem;
+}
+#readyToEat > .individualBurger > h3 {
+    padding-right: 2rem;
+    text-align: left;
+}
+#devoured {
+    text-align: center;
+    margin: 0 1rem 0 3rem;
+}
+.individualBurger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#newBurger {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+#newBurgerName {
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: solid #d54327 .2rem;
+    width: 30%;
+}
+label {
+    font-family: 'Oleo Script', serif;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+#submit {
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: #d54327;
+    color: #e9ae21;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+.devourButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: #e9ae21;
+    color: #d54327;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+@media screen and (max-width: 650px) {
+    .logoHolder {
+        width: 15%;
+    }
+    #readyToEat {
+        margin: 0 1rem 0 1rem;
+    }
+    #readyToEat > .individualBurger > h3 {
+        padding-right: 1rem;
+    }
+    #devoured {
+        margin: 0 1rem 0 1rem;
+    }
+    #newBurgerName {
+        width: 50%;
+    }
+    label {
+        width: 75%;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    #burgersHolder {
+        flex-direction: column;
+        align-items: center;
+    }
+    #devoured > h2 {
+        margin: 1.5rem 0 .5rem 0; 
+    }
+    #newBurger {
+        margin: 1rem 0 2rem 0;
+    }
 }

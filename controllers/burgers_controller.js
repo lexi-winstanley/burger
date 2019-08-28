@@ -6,18 +6,13 @@ router.get('/', function (req, res) {
     burger.all(function(data) {
         let readyToEatBurgers = [];
         let devouredBurgers = [];
-        console.log(data[0]);
-        console.log(data[0].burger_name);
-        console.log(data[0].devoured);
         for (let i = 0; i < data.length; i++) {
-            console.log(data[i]);
             if (data[i].devoured === 1) {
                 devouredBurgers.push(data[i]);
             } else {
                 readyToEatBurgers.push(data[i]);
             }
         }
-        console.log(readyToEatBurgers);
         res.render('index', {readyToEatBurgers: readyToEatBurgers, devouredBurgers: devouredBurgers});
     })
 });
