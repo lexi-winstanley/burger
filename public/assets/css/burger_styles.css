@@ -89,11 +89,13 @@ h3 {
     border-radius: .5rem;
     border: solid #d54327 .2rem;
     width: 30%;
+    margin: 1rem;
 }
 label {
     font-family: 'Oleo Script', serif;
-    margin: 1rem;
     font-size: 1.25rem;
+    width: 50%;
+    align-self: center;
 }
 #submit {
     align-self: center;
@@ -132,7 +134,6 @@ label {
     }
     label {
         width: 75%;
-        align-self: center;
     }
 }
 @media screen and (max-width: 550px) {
