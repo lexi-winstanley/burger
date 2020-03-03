@@ -13,7 +13,7 @@ This application is organized using the Model-View-Controller (MVC) design patte
 ## Role
 Sole developer responsible for design, code and creation of custom graphics. Functionality requirements provided by UW Coding Bootcamp/Trilogy Education Services.
 
-## Technologies Used
+## Technologies
 HTML
 <br/>Handlebars
 <br/>CSS
