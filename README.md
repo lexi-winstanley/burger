@@ -11,7 +11,7 @@ Eat Da Burger is a web application that displays lists of 'Ready to Eat' or 'Dev
 This application is organized using the Model-View-Controller (MVC) design pattern and deployed with Heroku. An Object Relational Mapper (ORM) is defined with functions to handle the MySQL queries and the model further defines those functions specific to the Eat Da Burger application. The routing is defined in the controller and the functions are called as appropriate, once database data is gathered or altered, the view updates from the Handlebars template using a page reload. On home page load, the user is presented with any existing burgers in the MySQL database, non-devoured burgers in the 'Ready to Eat' section and devoured burgers in the 'Devoured' section. There is also a form to allow them to input the name of new burgers they'd like to eat. Once they hit submit, the new burger is added to the MySQL database as 'Ready to Eat' and the page is reloaded so the burger is displayed in the appropriate section with a 'Devour It!' button. If the user clicks this button the devoured state for that burger is updated in the MySQL database and the page is reloaded showing the burger moved to the 'Devoured' section of the page.
 
 ## Role
-Sole developer responsible for design, code and creation of custom graphics. Functionality requirements provided by UW Coding Bootcamp/Trilogy Education Services.
+Sole developer responsible for design, code and creation of custom graphics.
 
 ## Technologies
 HTML
